@@ -1,75 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Simple Marketing Dashboard</title>
- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-white text-slate-800">
-    <!--my Top navigation -->
-  <header class="border-b border-slate-200">
-    <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
-      <span class="font-semibold">Marketly</span>
-      <nav class="flex gap-6 text-sm text-slate-500">
-        <a href="#" class="font-medium text-slate-900">view</a>
-        <a href="#" class="hover:text-slate-900">Campaigns</a>
-        <a href="#" class="hover:text-slate-900">Reports</a>
-        <a href="#" class="hover:text-slate-900">Settings</a>
-      </nav>
+
+<body class="bg-slate-50 text-slate-800">
+
+  <!-- Header -->
+  <header class="bg-white border-b border-slate-200">
+
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <span class="font-semibold text-xl">Marketly</span>
     </div>
+
   </header>
-   <!--my main section-->
-   <section>
-   <main class="mx-auto max-w-5xl px-4 py-8">
-    <h1 class="text-2xl font-semibold">view</h1>
-    <p class="mt-1 text-sm text-slate-500">A quick look at how your marketing is doing.</p>
 
-    <!-- the Stats -->
-    <section class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
-      <div class="rounded-lg border border-slate-200 p-4">
-        <p class="text-sm text-slate-500">Visitors</p>
-        <p class="mt-1 text-3xl font-semibold">12,480</p>
-      </div>
-      <div class="rounded-lg border border-slate-200 p-4">
-        <p class="text-sm text-slate-500">Sign-ups</p>
-        <p class="mt-1 text-3xl font-semibold">640</p>
-      </div>
-      <div class="rounded-lg border border-slate-200 p-4">
-        <p class="text-sm text-slate-500">Conversion rate</p>
-        <p class="mt-1 text-3xl font-semibold">5.1%</p>
-      </div>
-    </section>
-    <!-- the Campaign list -->
-    <section class="mt-8">
-      <h2 class="text-lg font-semibold">Campaigns</h2>
-      <ul class="mt-3 divide-y divide-slate-200 rounded-lg border border-slate-200">
-        <li class="flex items-center justify-between gap-4 p-4">
-          <div class="min-w-0">
-            <p class="truncate font-medium">Black Friday Sale</p>
-            <p class="text-sm text-slate-500">Facebook Ads</p>
+  <!-- Main Layout -->
+  <div class="flex flex-col md:flex-row min-h-screen">
+
+    <!-- Sidebar -->
+    <aside class="w-full md:w-48 shrink-0 border-b md:border-b-0 md:border-r border-slate-200 bg-white">
+
+      <nav class="flex flex-row flex-wrap md:flex-col gap-3 text-sm p-4">
+
+        <a href="#overview"
+          class="bg-blue-50 text-blue-700 font-semibold rounded-lg px-4 py-3">
+          Overview
+        </a>
+
+        <a href="#campaigns"
+          class="hover:bg-blue-50 hover:text-blue-700 rounded-lg px-4 py-3">
+          Campaigns
+        </a>
+
+        <a href="#settings"
+          class="hover:bg-blue-50 hover:text-blue-700 rounded-lg px-4 py-3">
+          Settings
+        </a>
+
+      </nav>
+
+    </aside>
+
+    <!-- Main Section -->
+    <main class="flex-1 min-w-0 px-4 sm:px-6 py-8">
+
+      <div class="max-w-5xl">
+
+        <section id="overview">
+
+          <h1 class="text-2xl font-semibold">Overview</h1>
+
+          <p class="mt-1 text-sm text-slate-500">
+            A quick look at how your marketing is doing.
+          </p>
+
+        </section>
+
+        <!-- Statistics/facts -->
+        <section class="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+
+          <div class="rounded-lg border border-slate-200 bg-white p-4">
+            <p class="text-sm text-slate-500">Visitors</p>
+            <p class="mt-1 text-3xl font-semibold">12,480</p>
           </div>
-          <div class="hidden w-40 sm:block">
-            <div class="h-2 rounded-full bg-slate-100"><div class="h-2 w-3/4 rounded-full bg-blue-600"></div>
-        </div>
-        <!-- contains weekly newsletter -->
-        <span class="text-sm text-green-600">Active</span>
-        </li>
-        <li class="flex items-center justify-between gap-4 p-4">
-          <div class="min-w-0">
-            <p class="truncate font-medium">Weekly Newsletter</p>
-            <p class="text-sm text-slate-500">Email</p>
+
+          <div class="rounded-lg border border-slate-200 bg-white p-4">
+            <p class="text-sm text-slate-500">Sign-ups</p>
+            <p class="mt-1 text-3xl font-semibold">640</p>
           </div>
-          <div class="hidden w-40 sm:block">
-            <div class="h-2 rounded-full bg-slate-100"><div class="h-2 w-1/2 rounded-full bg-blue-600"></div></div>
-         
 
+          <div class="rounded-lg border border-slate-200 bg-white p-4">
+            <p class="text-sm text-slate-500">Conversion rate</p>
+            <p class="mt-1 text-3xl font-semibold">5.1%</p>
+          </div>
 
+        </section>
 
+        <!-- Campaign List -->
+        <section id="campaigns" class="mt-8">
 
-   </section>
-  
+          <h2 class="text-lg font-semibold">Campaigns</h2>
+
+          <ul class="mt-3 divide-y divide-slate-200 rounded-lg border border-slate-200 bg-white">
+
+            <!-- Black Friday Sale -->
+            <li class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-4">
+
+              <div class="min-w-0">
+                <p class="truncate font-medium">Black Friday Sale</p>
+                <p class="text-sm text-slate-500">Facebook Ads</p>
+              </div>
+
+              <div class="flex flex-col gap-2 sm:w-40">
+
+                <div class="h-2 rounded-full bg-slate-100">
+                  <div class="h-2 w-3/4 rounded-full bg-blue-600"></div>
+                </div>
+
+                <span class="text-sm text-green-600">Active</span>
+
+              </div>
+
+            </li>
+
+            <!-- Weekly Newsletter -->
+            <li class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-4">
+
+              <div class="min-w-0">
+                <p class="truncate font-medium">Weekly Newsletter</p>
+                <p class="text-sm text-slate-500">Email</p>
+              </div>
+
+              <div class="flex flex-col gap-2 sm:w-40">
+
+                <div class="h-2 rounded-full bg-slate-100">
+                  <div class="h-2 w-1/2 rounded-full bg-blue-600"></div>
+                </div>
+
+                <span class="text-sm text-green-600">Active</span>
+
+              </div>
+
+            </li>
+
+            <!-- Product Launch -->
+            <li class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-4">
+
+              <div class="min-w-0">
+                <p class="truncate font-medium">Product Launch</p>
+                <p class="text-sm text-slate-500">YouTube</p>
+              </div>
+
+              <div class="flex flex-col gap-2 sm:w-40">
+
+                <div class="h-2 rounded-full bg-slate-100">
+                  <div class="h-2 w-full rounded-full bg-blue-600"></div>
+                </div>
+
+                <span class="text-sm text-slate-400">Ended</span>
+
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </div>
+
+    </main>
+
+  </div>
+
 </body>
 </html>
-!
-
