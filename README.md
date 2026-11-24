@@ -1,8 +1,13 @@
 # Marketly -marketing dashboard
-Marketly is a marketing dashboard concept designed to present essential marketing information through a simple and organized interface it provides an overview of website visitors, sign-ups, conversion rates, and marketing campaigns.
-
-![License: MIT](https://img.shields.io/badge/license-MIT-green)
+ ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 ![HTML5](https://img.shields.io/badge/HTML5-semantic-e34f26?logo=html5&logoColor=white)
+
+Marketly is a responsive marketing dashboard interface designed to help businesses and digital marketing teams monitor and understand their marketing performance from one centralized location.
+
+to Manage marketing campaigns across multiple channels can make it difficult to track important performance indicators and evaluate campaign progress
+
+### The aim of the project
+ is a user-friendly marketing dashboard interface that centralizes essential marketing performance information, simplifies campaign monitoring,easier to understand.
 
 ## Features 
 - Sidebar navigation.
@@ -13,7 +18,7 @@ Marketly is a marketing dashboard concept designed to present essential marketin
 
 - Campaign progress indicators
 ### Technologies used
-- HTML-page structure
+- HTML5-page structure
 - tailwinds css-styling and structure of the website
 ### Getting started
 ``` git clone https://github.com/justinjnr23-hub/marketing-dashboard.git```
